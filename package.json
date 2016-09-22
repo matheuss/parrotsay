@@ -1,0 +1,61 @@
+{
+  "name": "parrotsay",
+  "version": "0.1.0",
+  "description": "Say things with the Party Parrot on your terminal",
+  "bin": {
+    "parrotsay": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "xo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheuss/parrotsay.git"
+  },
+  "keywords": [
+    "parrotsay",
+    "party",
+    "parrot",
+    "partyparrot",
+    "party-parrot",
+    "party_parrot",
+    "cli",
+    "terminal",
+    "say"
+  ],
+  "author": "Matheus Fernandes <npm@matheus.top> (https://matheus.top/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matheuss/parrotsay/issues"
+  },
+  "homepage": "https://github.com/matheuss/parrotsay#readme",
+  "dependencies": {
+    "get-stdin": "^5.0.1",
+    "minimist": "^1.2.0",
+    "parrotsay-api": "^0.1.1",
+    "update-notifier": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.14.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-cached": "^1.1.0",
+    "gulp-chmod": "^1.3.0",
+    "xo": "^0.16.0"
+  },
+  "babel": {
+    "plugins": [
+      "add-module-exports",
+      "transform-es2015-modules-commonjs"
+    ]
+  },
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "semicolon": false
+  }
+}
