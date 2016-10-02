@@ -7,7 +7,7 @@ gulp.task('transpile', () =>
   gulp.src('src/index.js')
     .pipe(cache('transpile'))
     .pipe(babel())
-		.pipe(chmod(755))
+    .pipe(chmod(755))
     .pipe(gulp.dest('dist')))
 
 gulp.task('watch', () => gulp.watch('src/*.js', ['transpile']))
