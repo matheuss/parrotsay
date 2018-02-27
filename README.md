@@ -22,6 +22,20 @@ or
 - [parrotsay-api](https://github.com/matheuss/parrotsay-api) - API for this module
 - [Cult of the Party Parrot](http://cultofthepartyparrot.com/)
 
+## Docker
+
+check your parrot fortune
+
+`docker run -t hypergig/parrotsay`
+
+to parrotsay
+
+`docker run -t hypergig/parrotsay yay`
+
+to build
+
+`docker build -t parrotsay docker/.`
+
 ## License
 
 MIT © [Matheus Fernandes](http://matheus.top)
