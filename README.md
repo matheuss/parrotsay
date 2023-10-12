@@ -17,6 +17,14 @@ or
 
 `echo 'yay' | parrotsay`
 
+## Different parrots
+
+`parrotsay --parrot-random yay`
+
+or
+
+`echo 'yay' | parrotsay --parrot-white-eyed-conure`
+
 ## Related
 
 - [parrotsay-api](https://github.com/matheuss/parrotsay-api) - API for this module

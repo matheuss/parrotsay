@@ -8,15 +8,22 @@ const pkg = require('../package.json')
 
 updateNotifier({pkg}).notify()
 
-const input = minimist(process.argv.slice(2))._.join(' ')
+let parrotArg = process.argv[2];
+if ( parrotArg.startsWith('--parrot-') ) {
+	parrotArg = parrotArg.replace('--parrot-', '');
+	delete(process.argv[2]); 
+} else {
+	parrotArg = undefined;
+}
 
+const input = minimist(process.argv.slice(2))._.join(' ')
 if (input) {
-	parrot(input)
+	parrot(input, parrotArg)
 		.then(console.log)
 		.catch(console.error)
 } else {
 	getStdin().then(string => {
-		parrot(string.trim() || 'LET\'S PARTY')
+		parrot(string.trim() || 'LET\'S PARTY', parrotArg)
 			.then(console.log)
 			.catch(console.error)
 	})
